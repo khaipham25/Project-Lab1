@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_add_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN PHÒNG"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtRoomId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã phòng (VD: P101)"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên phòng"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá thuê (VNĐ)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tình trạng:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/rgStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <RadioButton android:id="@+id/rbAvailable" android:text="Còn trống" />
+            <RadioButton android:id="@+id/rbRented" android:text="Đã thuê" android:layout_marginStart="20dp"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtTenantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên người thuê (nếu có)"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LƯU THÔNG TIN"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HỦY / QUAY LẠI"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9E9E9E"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>
